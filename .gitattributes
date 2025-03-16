@@ -1,0 +1,11 @@
+.prefab
+git[[:space:]]lfs[[:space:]]track[[:space:]]*.unity filter=lfs diff=lfs merge=lfs -text
+*.meta
+git[[:space:]]lfs[[:space:]]track[[:space:]]*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg
+[[:space:]]git[[:space:]]lfs[[:space:]]track[[:space:]]*.wav filter=lfs diff=lfs merge=lfs -text
+*.[[:space:]]unity
+git[[:space:]]lfs[[:space:]]track[[:space:]]*. filter=lfs diff=lfs merge=lfs -text
+prefab filter=lfs diff=lfs merge=lfs -text
+*.png
+git[[:space:]]lfs[[:space:]]track[[:space:]]*.jpg filter=lfs diff=lfs merge=lfs -text
