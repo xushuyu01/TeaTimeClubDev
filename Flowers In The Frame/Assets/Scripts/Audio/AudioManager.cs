@@ -37,13 +37,18 @@ public class AudioManager : MonoBehaviour
         {
             bgmVolume = volume;
             bgmSource.volume = bgmVolume;
+            PlayerPrefs.SetFloat("BGMVolume", bgmVolume);
         }
         else if (type == AudioType.SFX)
         {
             sfxVolume = volume;
             sfxSource.volume = sfxVolume;
+            PlayerPrefs.SetFloat("SFXVolume", sfxVolume);
         }
+
+        PlayerPrefs.Save();
     }
+
 
     public void PlaySFX(AudioClip clip)
     {
