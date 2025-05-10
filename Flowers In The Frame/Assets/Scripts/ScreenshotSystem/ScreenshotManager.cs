@@ -8,13 +8,16 @@ public class ScreenshotManager : MonoBehaviour
     public RectTransform screenshotArea; // 拖拽进来的截图 UI 区域
     public int levelID;
 
+    public LevelPanelBase levelPanelBase; // 外部赋值
+    public RectTransform albumButton;     
+
     public void CaptureAndSaveScreenshot()
     {
-        string filename = $"photo_level_{levelID}_{System.DateTime.Now.Ticks}.png";
-        string path = Path.Combine(Application.persistentDataPath, filename);
+        string filename = $"photo_level_{System.DateTime.Now.ToString("yyyyMMdd_HHmmss")}.png";
+        string fullPath = Path.Combine(Application.persistentDataPath, filename);
 
         ScreenCapture.CaptureScreenshot(filename);
-        Debug.Log("截图保存成功：" + path);
+        StartCoroutine(WaitForScreenshotThenFly(fullPath));
 
         // 延迟一帧后刷新相册（因为截图是异步的）
         StartCoroutine(DelayedRefreshAlbum());
@@ -60,6 +63,7 @@ public class ScreenshotManager : MonoBehaviour
         // 保存图片
         byte[] bytes = cropped.EncodeToPNG();
         File.WriteAllBytes(path, bytes);
+        levelPanelBase.PlayScreenshotFlyToAlbum(path, albumButton);
 
         Debug.Log("Screenshot saved to: " + path);
 
@@ -67,4 +71,19 @@ public class ScreenshotManager : MonoBehaviour
         Destroy(screenTex);
         Destroy(cropped);
     }
+
+
+    private IEnumerator WaitForScreenshotThenFly(string fullPath)
+    {
+        while (!File.Exists(fullPath))
+        {
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(0.1f); // 多给点时间确保写完
+
+        // 这里开始飞行动画
+        //levelPanelBase.PlayScreenshotFlyToAlbum(fullPath, albumButton);
+    }
+
 }

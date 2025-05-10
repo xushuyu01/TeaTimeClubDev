@@ -755,6 +755,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screenshotArea: {fileID: 4875193437687702918}
   levelID: 1
+  levelPanelBase: {fileID: 2630003326169223607}
+  albumButton: {fileID: 4875193437763398391}
 --- !u!1 &4875193439667085913
 GameObject:
   m_ObjectHideFlags: 0
