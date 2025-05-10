@@ -16,8 +16,8 @@ public class ScreenshotManager : MonoBehaviour
         string filename = $"photo_level_{System.DateTime.Now.ToString("yyyyMMdd_HHmmss")}.png";
         string fullPath = Path.Combine(Application.persistentDataPath, filename);
 
-        ScreenCapture.CaptureScreenshot(filename);
-        StartCoroutine(WaitForScreenshotThenFly(fullPath));
+        //ScreenCapture.CaptureScreenshot(filename);
+        //StartCoroutine(WaitForScreenshotThenFly(fullPath));
 
         // 延迟一帧后刷新相册（因为截图是异步的）
         StartCoroutine(DelayedRefreshAlbum());
