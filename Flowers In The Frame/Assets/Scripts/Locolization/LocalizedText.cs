@@ -16,21 +16,22 @@ public class LocalizedText : MonoBehaviour
         tmpText = GetComponent<TextMeshProUGUI>();
     }
 
+    // 删除 OnEnable()
     void Start()
     {
         uiText = GetComponent<Text>();
+        tmpText = GetComponent<TextMeshProUGUI>();
 
-        if (uiText == null)
+        if (uiText == null && tmpText == null)
         {
-            Debug.LogError($"Text component missing on {gameObject.name}");
+            Debug.LogError($"[{gameObject.name}] 没有 Text 或 TMP 组件！");
         }
         else
         {
-            Debug.Log($"Text component found on {gameObject.name}");
+            RefreshText();
         }
-
-        RefreshText();
     }
+
 
 
     //public void RefreshText()
@@ -73,8 +74,8 @@ public class LocalizedText : MonoBehaviour
         }
     }
 
-    private void OnEnable()
-    {
-        RefreshText();
-    }
+    //private void OnEnable()
+    //{
+    //    RefreshText();
+    //}
 }

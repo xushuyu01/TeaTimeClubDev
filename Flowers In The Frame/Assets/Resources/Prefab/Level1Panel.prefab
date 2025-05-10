@@ -121,19 +121,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4875193437624439896}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4875193439576659335}
-        m_TargetAssemblyTypeName: ScreenshotManager, Assembly-CSharp
-        m_MethodName: CaptureAndSaveScreenshot
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &4875193437687702919
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,19 +278,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4875193437763398389}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &4875193437951121165
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,6 +766,7 @@ GameObject:
   - component: {fileID: 4875193439667085912}
   - component: {fileID: 4875193439667085918}
   - component: {fileID: 4875193439667085919}
+  - component: {fileID: 2630003326169223607}
   m_Layer: 5
   m_Name: Level1Panel
   m_TagString: Untagged
@@ -804,7 +781,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4875193439667085913}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -863,6 +840,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2630003326169223607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4875193439667085913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b56faa06c0dffe42a811c02109f4c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnSetting: {fileID: 4875193438559628452}
+  btnScreenshot: {fileID: 4875193437624439897}
+  btnAlbum: {fileID: 4875193437763398390}
 --- !u!1 &4875193439682461427
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,8 +941,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 4875193439667085912}
     m_Modifications:
     - target: {fileID: 927528430001686172, guid: 4ecb2cffe74cc934cb584fa6b7e35fd5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 927528430001686172, guid: 4ecb2cffe74cc934cb584fa6b7e35fd5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 6152864551260455694, guid: b3e5b68b49e369b48a859e9f8a731d7a, type: 3}
+    - target: {fileID: 927528430001686172, guid: 4ecb2cffe74cc934cb584fa6b7e35fd5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 927528430001686173, guid: 4ecb2cffe74cc934cb584fa6b7e35fd5, type: 3}
       propertyPath: m_Pivot.x
@@ -1042,6 +1042,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ecb2cffe74cc934cb584fa6b7e35fd5, type: 3}
+--- !u!114 &4875193438559628452 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 927528430001686172, guid: 4ecb2cffe74cc934cb584fa6b7e35fd5, type: 3}
+  m_PrefabInstance: {fileID: 5726068177540672056}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &4875193438559628453 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 927528430001686173, guid: 4ecb2cffe74cc934cb584fa6b7e35fd5, type: 3}
