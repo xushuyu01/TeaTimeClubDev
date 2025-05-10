@@ -10,7 +10,25 @@ public class ScreenshotManager : MonoBehaviour
 
     public void CaptureAndSaveScreenshot()
     {
+        string filename = $"photo_level_{levelID}_{System.DateTime.Now.Ticks}.png";
+        string path = Path.Combine(Application.persistentDataPath, filename);
+
+        ScreenCapture.CaptureScreenshot(filename);
+        Debug.Log("截图保存成功：" + path);
+
+        // 延迟一帧后刷新相册（因为截图是异步的）
+        StartCoroutine(DelayedRefreshAlbum());
         StartCoroutine(CaptureRoutine());
+    }
+    IEnumerator DelayedRefreshAlbum()
+    {
+        yield return new WaitForEndOfFrame(); // 等一帧，保证文件写入完成
+
+        var album = FindObjectOfType<PhotoAlbum>();
+        if (album != null)
+        {
+            album.RefreshAlbum();
+        }
     }
 
     private IEnumerator CaptureRoutine()

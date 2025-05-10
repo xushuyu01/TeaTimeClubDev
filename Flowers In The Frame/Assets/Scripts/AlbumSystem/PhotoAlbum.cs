@@ -113,4 +113,11 @@ public class PhotoAlbum : MonoBehaviour
             UpdatePages();
         }
     }
+
+    public void RefreshAlbum()
+    {
+        LoadAllPhotoPaths();
+        currentPage = 0; // 如果需要，回到第一页
+        UpdatePages();
+    }
 }

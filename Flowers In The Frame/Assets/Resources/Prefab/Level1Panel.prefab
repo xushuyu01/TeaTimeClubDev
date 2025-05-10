@@ -290,8 +290,8 @@ GameObject:
   - component: {fileID: 4875193437951121164}
   - component: {fileID: 4875193437951121153}
   - component: {fileID: 4875193437951121154}
-  - component: {fileID: 4875193437951121155}
   - component: {fileID: 4875193437951121152}
+  - component: {fileID: 4822533452689991129}
   m_Layer: 5
   m_Name: flower1_3
   m_TagString: Untagged
@@ -357,19 +357,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4875193437951121155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4875193437951121165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c06640ba24837b498f90412e098f58b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  validDropArea: {fileID: 4875193438746834128}
 --- !u!225 &4875193437951121152
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -382,6 +369,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &4822533452689991129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4875193437951121165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cebef0b0a24c6954aa0e183451a595c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  validDropArea: {fileID: 4875193438746834128}
 --- !u!1 &4875193438122385744
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,8 +393,8 @@ GameObject:
   - component: {fileID: 4875193438122385751}
   - component: {fileID: 4875193438122385749}
   - component: {fileID: 4875193438122385750}
-  - component: {fileID: 4875193438122385748}
   - component: {fileID: 4875193438122385739}
+  - component: {fileID: 2650658542537729422}
   m_Layer: 5
   m_Name: flower1_1
   m_TagString: Untagged
@@ -460,19 +460,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4875193438122385748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4875193438122385744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c06640ba24837b498f90412e098f58b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  validDropArea: {fileID: 4875193438746834128}
 --- !u!225 &4875193438122385739
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -485,6 +472,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &2650658542537729422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4875193438122385744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cebef0b0a24c6954aa0e183451a595c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  validDropArea: {fileID: 4875193438746834128}
 --- !u!1 &4875193438344091139
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,8 +496,8 @@ GameObject:
   - component: {fileID: 4875193438344091138}
   - component: {fileID: 4875193438344091143}
   - component: {fileID: 4875193438344091136}
-  - component: {fileID: 4875193438344091137}
   - component: {fileID: 4875193438344091142}
+  - component: {fileID: 5047443460357341312}
   m_Layer: 5
   m_Name: flower1_2
   m_TagString: Untagged
@@ -563,19 +563,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4875193438344091137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4875193438344091139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c06640ba24837b498f90412e098f58b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  validDropArea: {fileID: 4875193438746834128}
 --- !u!225 &4875193438344091142
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -588,6 +575,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &5047443460357341312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4875193438344091139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cebef0b0a24c6954aa0e183451a595c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  validDropArea: {fileID: 4875193438746834128}
 --- !u!1 &4875193438746834129
 GameObject:
   m_ObjectHideFlags: 0
