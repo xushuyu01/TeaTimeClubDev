@@ -4,8 +4,10 @@ using System.IO;
 
 public enum Language { English, Chinese }
 
+
 public class LocalizationManager : MonoBehaviour
 {
+    public Font CurrentFont { get; private set; }
     public static LocalizationManager Instance;
 
     private Dictionary<string, string> localizedText;
@@ -48,10 +50,9 @@ public class LocalizationManager : MonoBehaviour
     public void LoadLocalization(Language language)
     {
         localizedText.Clear();
-
         currentLanguage = language;
 
-        string fileName = $"Excel/localization"; // 不用加 _en 或 _zh，因为 CSV 文件已经包含两种语言列
+        string fileName = $"Excel/localization";
         TextAsset csv = Resources.Load<TextAsset>(fileName);
 
         if (csv == null)
@@ -62,13 +63,24 @@ public class LocalizationManager : MonoBehaviour
 
         localizedText = ParseCSV(csv.text);
 
-        Debug.Log($"Localization loaded for {language} with keys: {string.Join(", ", localizedText.Keys)}");
+        // 加载对应字体
+        switch (language)
+        {
+            case Language.Chinese:
+                CurrentFont = Resources.Load<Font>("Fonts/ZCOOLXiaoWei-Regular"); // 不带 .ttf
+                break;
+            case Language.English:
+                CurrentFont = Resources.Load<Font>("Fonts/Tagesschrift-Regular");
+                break;
+        }
 
         PlayerPrefs.SetString("Language", language.ToString());
         PlayerPrefs.Save();
 
         Debug.Log("加载语言：" + language);
         Debug.Log("加载到的 key 数量：" + localizedText.Count);
+
+        RefreshAllLocalizedText();
     }
 
 
@@ -131,6 +143,14 @@ public class LocalizationManager : MonoBehaviour
         }
 
         return result;
+    }
+    public void RefreshAllLocalizedText()
+    {
+        var localizedTexts = FindObjectsOfType<LocalizedText>();
+        foreach (var lt in localizedTexts)
+        {
+            lt.RefreshText();
+        }
     }
 
 }

@@ -5,5 +5,5 @@ btn_album,ALBUM,相册
 btn_credits,CREDITS,制作人员
 btn_quit,QUIT,退出游戏
 language,LANGUAGE,语言选项
-bgm,BGM VOLUME,背景音量
-sfx,SFX VOLUME,音效音量
+bgm,MUSIC,背景音量
+sfx,SOUND,音效音量

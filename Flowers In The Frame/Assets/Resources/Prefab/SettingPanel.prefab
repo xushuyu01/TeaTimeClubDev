@@ -2312,7 +2312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf0d4268eb296804fa1379b38f21712c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  localizationKey: bgm
+  localizationKey: sfx
 --- !u!1 &6338240682384445794
 GameObject:
   m_ObjectHideFlags: 0
@@ -2406,7 +2406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf0d4268eb296804fa1379b38f21712c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  localizationKey: bgm
+  localizationKey: language
 --- !u!1 &6767569820512566895
 GameObject:
   m_ObjectHideFlags: 0

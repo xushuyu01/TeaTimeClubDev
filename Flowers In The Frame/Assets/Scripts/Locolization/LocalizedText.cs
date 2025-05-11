@@ -32,26 +32,6 @@ public class LocalizedText : MonoBehaviour
         }
     }
 
-
-
-    //public void RefreshText()
-    //{
-    //    string localizedString = LocalizationManager.Instance.GetText(localizationKey);
-
-    //    if (uiText != null)
-    //    {
-    //        uiText.text = localizedString;
-    //    }
-    //    else if (tmpText != null)
-    //    {
-    //        tmpText.text = localizedString;
-    //    }
-    //    else
-    //    {
-    //        Debug.LogError($"No Text or TMP component found on {gameObject.name}!");
-    //    }
-
-    //}
     public void RefreshText()
     {
         string localizedString = LocalizationManager.Instance.GetText(localizationKey);
@@ -72,6 +52,10 @@ public class LocalizedText : MonoBehaviour
         {
             Debug.LogError($"[{gameObject.name}] 没有 Text 或 TMP 组件！");
         }
+        if (LocalizationManager.Instance.CurrentFont != null)
+        {
+            uiText.font = LocalizationManager.Instance.CurrentFont;
+        }//刷新字体
     }
 
     //private void OnEnable()
