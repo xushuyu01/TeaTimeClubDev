@@ -224,9 +224,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 11.600006}
-      m_SelectedIDs: ba5f0000
-      m_LastClickedID: 24506
-      m_ExpandedIDs: 54faffffb2faffff28fbffffba5f0000e45f000000600000
+      m_SelectedIDs: 9a5f0000
+      m_LastClickedID: 24474
+      m_ExpandedIDs: 54f9ffff66f9ffff78f9ffff54faffffb2faffff28fbffff9a5f0000b05f0000ba5f0000e45f000000600000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -524,9 +524,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 838.80634, y: 567.59265, z: -9.862724}
+    m_Target: {x: 983.00714, y: 591.0367, z: -2.6079793}
     speed: 2
-    m_Value: {x: 838.80634, y: 567.59265, z: -9.862724}
+    m_Value: {x: 983.00714, y: 591.0367, z: -2.6079793}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -577,9 +577,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 633.09106
+    m_Target: 706.944
     speed: 2
-    m_Value: 633.09106
+    m_Value: 706.944
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -672,21 +672,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Fonts
+    - Assets/Resources/SystemUI
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources/Fonts
+  - Assets/Resources/SystemUI
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\TeaTimeClubFolder_Main\TeaTimeClubDev\Flowers In The Frame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 96.600006}
-    m_SelectedIDs: 8e630000
-    m_LastClickedID: 25486
+    scrollPos: {x: 0, y: 60}
+    m_SelectedIDs: 96630000
+    m_LastClickedID: 25494
     m_ExpandedIDs: 0000000082630000846300008663000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -740,8 +740,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: ba5f0000
-    m_LastClickedInstanceID: 24506
+    m_SelectedInstanceIDs: 9a5f0000
+    m_LastClickedInstanceID: 24474
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000de690000
     m_RenameOverlay:
