@@ -857,6 +857,7 @@ MonoBehaviour:
   btnSetting: {fileID: 4875193438559628452}
   btnScreenshot: {fileID: 4875193437624439897}
   btnAlbum: {fileID: 4875193437763398390}
+  clickSound: {fileID: 0}
 --- !u!1 &4875193439682461427
 GameObject:
   m_ObjectHideFlags: 0

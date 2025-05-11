@@ -9,6 +9,8 @@ public class LevelPanelBase : MonoBehaviour
     public Button btnScreenshot;
     public Button btnAlbum;
 
+    public AudioClip clickSound;
+
     [Header("其他界面面板")]
     protected GameObject settingPanel; // 拖入 SettingPanel 对象
     protected GameObject albumPanel;   // 拖入 AlbumPanel 对象
@@ -32,6 +34,7 @@ public class LevelPanelBase : MonoBehaviour
         {
             btnSetting.onClick.RemoveAllListeners();
             btnSetting.onClick.AddListener(OpenSettingPanel);
+            btnSetting.onClick.AddListener(() => AudioManager.Instance.PlaySFX(clickSound));
         }
 
         if (btnScreenshot != null)
