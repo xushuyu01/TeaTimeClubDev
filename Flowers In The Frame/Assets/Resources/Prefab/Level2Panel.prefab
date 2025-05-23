@@ -215,6 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rawImage: {fileID: 3378299346584822431}
   stampTexture: {fileID: 2800000, guid: d204aa8f75f9de440890e2e760f917b2, type: 3}
+  stampSize: 0
 --- !u!1 &4875193437624439899
 GameObject:
   m_ObjectHideFlags: 0

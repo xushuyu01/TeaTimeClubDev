@@ -28,7 +28,7 @@ public class LevelSelectionButton : MonoBehaviour
 
     private bool IsLevelUnlocked()
     {
-        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1); // 默认解锁第1关
+        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 2); // 默认解锁第1关
         return levelIndex <= unlockedLevel;
     }
 
