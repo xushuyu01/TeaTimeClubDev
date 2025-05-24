@@ -28,7 +28,8 @@ public class LevelSelectionButton : MonoBehaviour
 
     private bool IsLevelUnlocked()
     {
-        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 2); // 默认解锁第1关
+        if (levelIndex == 0) return true;
+        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1); // 默认解锁第1关
         return levelIndex <= unlockedLevel;
     }
 
@@ -50,6 +51,20 @@ public class LevelSelectionButton : MonoBehaviour
         else
         {
             Debug.LogWarning("未设置关卡Prefab！");
+        }
+    }
+
+    // 这个方法放在游戏管理器或拍照成功回调处调用
+    public static void UnlockNextLevel(int currentLevelIndex)
+    {
+        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+        int nextLevel = currentLevelIndex + 1;
+
+        if (nextLevel > unlockedLevel)
+        {
+            PlayerPrefs.SetInt("UnlockedLevel", nextLevel);
+            PlayerPrefs.Save();
+            Debug.Log("解锁关卡: " + nextLevel);
         }
     }
 

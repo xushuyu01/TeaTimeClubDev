@@ -67,6 +67,8 @@ public class ScreenshotManager : MonoBehaviour
 
         Debug.Log("Screenshot saved to: " + path);
 
+        LevelSelectionButton.UnlockNextLevel(levelID);
+
         // ÊÍ·ÅÄÚ´æ
         Destroy(screenTex);
         Destroy(cropped);
